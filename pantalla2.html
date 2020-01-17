@@ -9,76 +9,39 @@
   </head>
 <body style="background-color:lightrose; color:navy;">
 <!- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// ->
-<h1>Encabezado del Programa/Rutina</h1>
+<h1> 1 - Encabezado del Programa</h1>
     <h2>(segunda Pantalla del programa)</h2>
-      <p><mark>Aquí se escribirán el nombre del programa ejemplo "program SumarNumeros ", las librerías  Ejemplo: #include(X-librería)  y los comentarios - </mark></p>
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+      <p><mark>Aquí se escribirán el nombre del programa ejemplo "program SumarNumeros ", las librerías  Ejemplo: #include(X-librería) 
+        y los comentarios generales sobre el programa, su función, autoría, etc. - </mark></p>
+    
 <!- _____________________________________________________________________________________________________________ ->
-<!-- Lienzo 1 -->     <canvas id= "processing-canvas1" > </canvas>
-
-
-
+<!-- Lienzo 1 -->     <canvas id= "processing-canvas1" > </canvas>    
 <!- _____________________________________________________________________________________________________________ ->
 <!-- Script 1 -->     <script type= "text/processing" data-processing-target= "processing-canvas1" >
 
 void draw ()
            {
-            size  (500 , 100 );
-            background  (100,100,0,50 );
+            size  (1200 , 300 );
+            background  (200,200,0,150 );
             fill(100);
             stroke  ( 255 );
-              text  ( "1 - CABEZA DEL PROGRAMA-RUTINA" , 10 , 15 , 125 );
+              text  ( "A - NOMBRE DEL PROGRAMA, LIBRERÍAS" , 10 , 15 , 125 );
               strokeWeight(20);
               stroke(100,80);
               line(0,10, 250,10);
             text  ( "< Aquí va el código que el usuario escribirá o editará >" , 50 , 50 , 25 );
+              text  ( "< HAGA CLICK AQUÍ PARA VOLVER >" , 50 , 70 , 25 );
 
                         fill(100,50);
                        stroke(110,210,200,15);
                          strokeWeight(0.3);
                          noFill();
-                         rect(0, 0, 260, 20,10);
-
-
+                        rect(0, 0, 260, 20,10);
             }
 void mousePressed() {
-  link("http://che.openshift.io/dashboard/#/ide/rafaelmessina1970/wksp-Pruebas", "_new");
+  link("index.html", "_new");
 }
-
           </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!- _____________________________________________________________________________________________________________ ->
@@ -87,10 +50,10 @@ void mousePressed() {
 <!-- Script 2 -->     <script type= "text/processing" data-processing-target= "processing-canvas2" >
      void setup ()
            {
-            size  (500 , 100 );
-            background  (0, 100, 100, 70 );
+            size  (1200 , 300 );
+            background  (200, 200, 200, 170 );
             fill(100);
-              text  ( "2 - ENTRADA DE DATOS / INFORMACIÓN" , 10 , 15 , 125 );
+              text  ( "B - COMENTARIOS GENERALES" , 10 , 15 , 125 );
               strokeWeight(20);
               stroke(100,80);
               line(0,10, 250,10);
