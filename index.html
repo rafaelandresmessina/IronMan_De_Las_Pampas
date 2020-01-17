@@ -19,9 +19,17 @@
 <!- _____________________________________________________________________________________________________________ ->
 <!-- Script 1 -->     <script type= "text/processing" data-processing-target= "processing-canvas1" >
 
+
+      void mouseOver() {
+
+   noFill(100);
+   stroke(10);
+}
+
 void draw ()
-           {
-            size  (1200 , 100 );
+                
+{        
+           size  (1200 , 100 );
             background  (100,100,0,50 );
             fill(100);
             stroke  ( 255 );
@@ -30,7 +38,7 @@ void draw ()
               stroke(100,80);
               line(0,10, 250,10);
             text  ( "< Aquí va el código que el usuario escribirá o editará >" , 50 , 50 , 25 );
-             stroke  ( 255,0,0 );
+             fill(255,0,0 );
             text  ( "< HAGA CLICK AQUÍ PARA EDITAR >" , 50 , 70 , 25 );
 
                         fill(100,50);
@@ -39,11 +47,17 @@ void draw ()
                          noFill();
                          rect(0, 0, 260, 20,10);
 
-
             }
+
+    
+
 void mousePressed() {
   link("pantalla2.html", "_new");
 }
+
+        
+      
+   
 
           </script>
 <!- _____________________________________________________________________________________________________________ ->
