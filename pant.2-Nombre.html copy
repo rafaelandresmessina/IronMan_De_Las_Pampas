@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.js"></script>
+  </head>
+<body style="background-color:lightrose; color:navy;">
+<!- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// ->
+<h1> 1 - Encabezado del Programa</h1>
+    <h2>(segunda Pantalla del programa)</h2>
+      <p><mark>Aquí se escribirán el nombre del programa ejemplo "program SumarNumeros ", las librerías  Ejemplo: #include(X-librería) 
+        y los comentarios generales sobre el programa, su función, autoría, etc. - </mark></p>
+    
+<!- _____________________________________________________________________________________________________________ ->
+<!-- Lienzo 1 -->     <canvas id= "processing-canvas1" > </canvas>    
+<!- _____________________________________________________________________________________________________________ ->
+<!-- Script 1 -->     <script type= "text/processing" data-processing-target= "processing-canvas1" >
+
+void draw ()
+           {
+            size  (1200 , 300 );
+            background  (200,200,0,150 );
+            fill(100);
+            stroke  ( 255 );
+              text  ( "A - NOMBRE DEL PROGRAMA, LIBRERÍAS" , 10 , 15 , 125 );
+              strokeWeight(20);
+              stroke(100,80);
+              line(0,10, 250,10);
+            text  ( "< Aquí va el código que el usuario escribirá o editará >" , 50 , 50 , 25 );
+               fill(255,0,255 );
+              text  ( "< HAGA CLICK AQUÍ PARA VOLVER >" , 50 , 70 , 25 );
+
+                        fill(100,50);
+                       stroke(110,210,200,15);
+                         strokeWeight(0.3);
+                         noFill();
+                        rect(0, 0, 260, 20,10);
+            }
+void mousePressed() {
+  link("index.html", "_new");
+}
+          </script>
+
+
+<!- _____________________________________________________________________________________________________________ ->
+<!-- Lienzo 2 -->     <canvas id= "processing-canvas2" > </canvas>
+<!- _____________________________________________________________________________________________________________ ->
+<!-- Script 2 -->     <script type= "text/processing" data-processing-target= "processing-canvas2" >
+     void setup ()
+           {
+            size  (1200 , 300 );
+            background  (200, 200, 200, 170 );
+            fill(100);
+              text  ( "B - COMENTARIOS GENERALES" , 10 , 15 , 125 );
+              strokeWeight(20);
+              stroke(100,80);
+              line(0,10, 250,10);
+            text  ( "< Aquí va el código que el usuario escribirá o editará >" , 50 , 50 , 25 );
+             fill(255,0,255 );
+              text  ( "< HAGA CLICK AQUÍ PARA VOLVER >" , 50 , 70 , 25 );
+           }         
+           
+void mousePressed() {
+  link("index.html", "_new");
+}
+
+          </script>
+<!- _____________________________________________________________________________________________________________ ->
+
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+</body></html>
+<!--_____________________________________________________________________________________________________________-->
+
