@@ -21,7 +21,7 @@
 
 void draw ()
            {
-            size  (1200 , 300 );
+            size  (1200 , 200 );
             background  (200,200,0,150 );
             fill(100);
             stroke  ( 255 );
@@ -29,9 +29,9 @@ void draw ()
               strokeWeight(20);
               stroke(100,80);
               line(0,10, 250,10);
-            text  ( "< Aquí va el código que el usuario escribirá o editará >" , 50 , 50 , 25 );
-               fill(255,0,255 );
-              text  ( "< HAGA CLICK AQUÍ PARA VOLVER >" , 50 , 70 , 25 );
+              text  ( "< código >" , 50 , 50 , 25 );
+               // fill(255,0,255 );
+              // text  ( "< HAGA CLICK AQUÍ PARA VOLVER >" , 50 , 70 , 25 );
 
                         fill(100,50);
                        stroke(110,210,200,15);
@@ -40,7 +40,7 @@ void draw ()
                         rect(0, 0, 260, 20,10);
             }
 void mousePressed() {
-  link("index.html", "_new");
+  link("1-a-encabezado-comentarios.html", "_new");
 }
           </script>
 
@@ -51,25 +51,53 @@ void mousePressed() {
 <!-- Script 2 -->     <script type= "text/processing" data-processing-target= "processing-canvas2" >
      void setup ()
            {
-            size  (1200 , 300 );
+            size  (1200 , 200 );
             background  (200, 200, 200, 170 );
             fill(100);
               text  ( "B - COMENTARIOS GENERALES" , 10 , 15 , 125 );
               strokeWeight(20);
               stroke(100,80);
               line(0,10, 250,10);
-            text  ( "< Aquí va el código que el usuario escribirá o editará >" , 50 , 50 , 25 );
-             fill(255,0,255 );
-              text  ( "< HAGA CLICK AQUÍ PARA VOLVER >" , 50 , 70 , 25 );
+            //text  ( "< código >" , 50 , 50 , 25 );
+             // fill(255,0,255 );
+              //text  ( "< HAGA CLICK AQUÍ PARA VOLVER >" , 50 , 70 , 25 );
            }         
            
 void mousePressed() {
-  link("index.html", "_new");
+  link("1-b-encabezado-librerìas.html", "_new");
 }
 
           </script>
 <!- _____________________________________________________________________________________________________________ ->
 
+  
+  !- _____________________________________________________________________________________________________________ ->
+<!-- Lienzo 3 -->     <canvas id= "processing-canvas3" > </canvas>
+<!- _____________________________________________________________________________________________________________ ->
+<!-- Script 3 -->     <script type= "text/processing" data-processing-target= "processing-canvas3" >
+      void setup ()
+           {
+            size  (1200 , 200 );
+            background  (0, 0, 100, 90 );
+            fill(100);
+            stroke  ( 255 );
+              text  ( "3 - PROCESAMIENTO DE LOS ELEMENTOS" , 10 , 15 , 125 );
+              strokeWeight(20);
+              stroke(100,80);
+              line(0,10, 250,10);
+            text  ( "< código >"  , 50 , 50 , 25 );                  
+                       
+           }
+                               
+void mousePressed() {
+  link("1-c-encabezado-nombre.html", "_new");
+}
+
+           
+          </script>
+<!- _____________________________________________________________________________________________________________ ->
+  
+  
 <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 </body></html>
 <!--_____________________________________________________________________________________________________________-->

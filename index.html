@@ -20,7 +20,6 @@
 <!-- Script 1 -->     <script type= "text/processing" data-processing-target= "processing-canvas1" >
 
 
-   
 void draw ()           
            
 {        
@@ -41,33 +40,20 @@ void draw ()
                          strokeWeight(0.3);
                          noFill();
                          rect(0, 0, 260, 20,10);
-
-
-
 }
-
-             
-
+           
 void mousePressed() {
-  link("pantalla2.html", "_new");
-  
-}
-
-       
+  link("1-encabezado.html", "_new"); 
+}    
          
-
-
-
-
-
-          </script>
+ </script>
 <!- _____________________________________________________________________________________________________________ ->
 <!-- Lienzo 2 -->     <canvas id= "processing-canvas2" > </canvas>
 <!- _____________________________________________________________________________________________________________ ->
 <!-- Script 2 -->     <script type= "text/processing" data-processing-target= "processing-canvas2" >
      void setup ()
            {
-            size  (1200 , 100 );
+            size  (1200 , 200 );
             background  (0, 100, 100, 70 );
             fill(100);
               text  ( "2 - ENTRADA DE DATOS / INFORMACIÓN" , 10 , 15 , 125 );
@@ -83,7 +69,7 @@ void mousePressed() {
 <!-- Script 3 -->     <script type= "text/processing" data-processing-target= "processing-canvas3" >
       void setup ()
            {
-            size  (1200 , 100 );
+            size  (1200 , 200 );
             background  (0, 0, 100, 90 );
             fill(100);
             stroke  ( 255 );
@@ -101,7 +87,7 @@ void mousePressed() {
 <!-- Script 4 -->     <script type= "text/processing" data-processing-target= "processing-canvas4" >
        void setup ()
            {
-            size  (1200 , 100 );
+            size  (1200 , 200 );
             background  (0, 100, 0, 110 );
             fill(100);
             stroke  ( 255 );
