@@ -11,17 +11,21 @@
 <!- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// ->
 <h1> 1 - Encabezado del Programa</h1>
     <h2>(segunda Pantalla del programa)</h2>
-      <p><mark>Aquí se escribirán el nombre del programa ejemplo "program SumarNumeros ", las librerías  Ejemplo: #include(X-librería) 
+      <p><mark>Aquí se escribirán el nombre del programa ejemplo "program SumarNumeros ", las librerías  Ejemplo: #include(X-librería)
         y los comentarios generales sobre el programa, su función, autoría, etc. - </mark></p>
     
+  
+  
 <!- _____________________________________________________________________________________________________________ ->
 <!-- Lienzo 1 -->     <canvas id= "processing-canvas1" > </canvas>    
 <!- _____________________________________________________________________________________________________________ ->
 <!-- Script 1 -->     <script type= "text/processing" data-processing-target= "processing-canvas1" >
 
+// Processing code
+
 void draw ()
            {
-            size  (1200 , 300 );
+            size  (1200 , 600 );
             background  (200,200,0,150 );
             fill(100);
             stroke  ( 255 );
@@ -31,7 +35,7 @@ void draw ()
               line(0,10, 250,10);
             text  ( "< Aquí va el código que el usuario escribirá o editará >" , 50 , 50 , 25 );
                fill(255,0,255 );
-              text  ( "< HAGA CLICK AQUÍ PARA VOLVER >" , 50 , 70 , 25 );
+              text  ( "< HAGA CLICK AQUÍ PARA VOLVER >" , 280 , 15 , 25 );
 
                         fill(100,50);
                        stroke(110,210,200,15);
@@ -45,31 +49,7 @@ void mousePressed() {
           </script>
 
 
-<!- _____________________________________________________________________________________________________________ ->
-<!-- Lienzo 2 -->     <canvas id= "processing-canvas2" > </canvas>
-<!- _____________________________________________________________________________________________________________ ->
-<!-- Script 2 -->     <script type= "text/processing" data-processing-target= "processing-canvas2" >
-     void setup ()
-           {
-            size  (1200 , 300 );
-            background  (200, 200, 200, 170 );
-            fill(100);
-              text  ( "B - COMENTARIOS GENERALES" , 10 , 15 , 125 );
-              strokeWeight(20);
-              stroke(100,80);
-              line(0,10, 250,10);
-            text  ( "< Aquí va el código que el usuario escribirá o editará >" , 50 , 50 , 25 );
-             fill(255,0,255 );
-              text  ( "< HAGA CLICK AQUÍ PARA VOLVER >" , 50 , 70 , 25 );
-           }         
-           
-void mousePressed() {
-  link("index0.1.html", "_new");
-}
-
-          </script>
-<!- _____________________________________________________________________________________________________________ ->
-
+  
 <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 </body></html>
 <!--_____________________________________________________________________________________________________________-->
